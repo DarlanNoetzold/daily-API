@@ -41,7 +41,7 @@ public class Anime {
     @Column(name = "year")
     private Integer year;
 
-    @JsonProperty("year")
-    @Column(name = "year")
+    @JsonProperty("season")
+    @Column(name = "season")
     private String season;
 }
