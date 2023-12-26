@@ -11,14 +11,12 @@ import java.util.List;
 
 @Service
 public class AnimeService {
-    private final AnimeFeignClient animeClient;
-    private final AnimeRepository animeRepository;
 
     @Autowired
-    public AnimeService(AnimeFeignClient animeClient, AnimeRepository animeRepository) {
-        this.animeClient = animeClient;
-        this.animeRepository = animeRepository;
-    }
+    private AnimeFeignClient animeClient;
+
+    @Autowired
+    private AnimeRepository animeRepository;
 
     public List<Anime> getSeasonAnimes(int year, String season) {
         AnimeSeasonResponse response = animeClient.getSeasonAnimes(year, season);
