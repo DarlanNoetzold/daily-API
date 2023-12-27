@@ -2,15 +2,15 @@ package tech.noetzold.dailyAPI.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import tech.noetzold.dailyAPI.client.DollarFeignClient;
 import tech.noetzold.dailyAPI.model.DollarValue;
 import tech.noetzold.dailyAPI.model.dto.DollarResponse;
 import tech.noetzold.dailyAPI.repository.DollarRepository;
 
-import java.math.BigDecimal;
-
 @Service
+@Cacheable("dollar")
 public class DollarService {
 
     @Autowired
