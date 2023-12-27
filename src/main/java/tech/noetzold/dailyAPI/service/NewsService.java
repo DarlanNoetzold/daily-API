@@ -1,15 +1,16 @@
 package tech.noetzold.dailyAPI.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import tech.noetzold.dailyAPI.client.NewsFeignClient;
 import tech.noetzold.dailyAPI.model.dto.TabnewsResponse;
 import tech.noetzold.dailyAPI.repository.NewsRepository;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
+@Cacheable("news")
 public class NewsService {
 
     @Autowired
