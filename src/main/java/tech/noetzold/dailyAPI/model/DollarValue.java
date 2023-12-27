@@ -1,6 +1,7 @@
 package tech.noetzold.dailyAPI.model;
 
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,5 +21,18 @@ public class DollarValue {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private BigDecimal value;
+    private String code;
+    private String codein;
+    private String name;
+    private BigDecimal high;
+    private BigDecimal low;
+    @JsonProperty("varBid")
+    private BigDecimal variationBid;
+    @JsonProperty("pctChange")
+    private BigDecimal percentChange;
+    private BigDecimal bid;
+    private BigDecimal ask;
+    private BigDecimal timestamp;
+    @JsonProperty("create_date")
+    private String createDate;
 }
