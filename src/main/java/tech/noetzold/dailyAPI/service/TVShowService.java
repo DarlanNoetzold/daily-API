@@ -1,6 +1,7 @@
 package tech.noetzold.dailyAPI.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import tech.noetzold.dailyAPI.client.TVFeignClient;
 import tech.noetzold.dailyAPI.model.TVShow;
@@ -10,8 +11,9 @@ import tech.noetzold.dailyAPI.repository.TVShowRepository;
 import java.util.List;
 
 @Service
+@Cacheable("tvshow")
 public class TVShowService {
-    
+
     @Autowired
     private TVFeignClient tvClient;
 
