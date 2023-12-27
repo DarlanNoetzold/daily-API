@@ -1,6 +1,7 @@
 package tech.noetzold.dailyAPI.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import tech.noetzold.dailyAPI.client.GameFeignClient;
 import tech.noetzold.dailyAPI.model.Game;
@@ -10,6 +11,7 @@ import tech.noetzold.dailyAPI.repository.GameRepository;
 import java.util.List;
 
 @Service
+@Cacheable("game")
 public class GameService {
 
     @Autowired
