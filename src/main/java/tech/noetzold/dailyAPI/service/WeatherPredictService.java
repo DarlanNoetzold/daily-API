@@ -17,8 +17,21 @@ public class WeatherPredictService {
     @Autowired
     private WeatherPredictRepository weatherPredictRepository;
 
-    public WeatherPredict getWeather(String lat, String lon, String apiKey) {
+    public WeatherPredict getWeather() {
+        String lat = "-28.2612";
+        String lon = "-52.4083";
+        String apiKey = "1472b7ec49efc4bf9eabbdb1026f3cea";
         WeatherResponse weatherResponse = weatherFeignClient.getWeather(lat, lon, apiKey);
-        return weatherPredictRepository.save(weatherResponse.getMain());
+        WeatherResponse weatherResponseKelvin = convertKelvin(weatherResponse);
+        return weatherPredictRepository.save(weatherResponseKelvin.getMain());
+    }
+
+    private WeatherResponse convertKelvin(WeatherResponse weatherResponse){
+        weatherResponse.getMain().setTemp(weatherResponse.getMain().getTemp().subtract(new BigDecimal("273.15")));
+        weatherResponse.getMain().setTemp_max(weatherResponse.getMain().getTemp_max().subtract(new BigDecimal("273.15")));
+        weatherResponse.getMain().setTemp_min(weatherResponse.getMain().getTemp_min().subtract(new BigDecimal("273.15")));
+        weatherResponse.getMain().setFeels_like(weatherResponse.getMain().getFeels_like().subtract(new BigDecimal("273.15")));
+
+        return weatherResponse;
     }
 }
