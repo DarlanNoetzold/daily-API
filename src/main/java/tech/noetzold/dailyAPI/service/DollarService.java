@@ -4,7 +4,9 @@ package tech.noetzold.dailyAPI.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tech.noetzold.dailyAPI.client.DollarFeignClient;
+import tech.noetzold.dailyAPI.model.DollarValue;
 import tech.noetzold.dailyAPI.model.dto.DollarResponse;
+import tech.noetzold.dailyAPI.repository.DollarRepository;
 
 import java.math.BigDecimal;
 
@@ -14,9 +16,12 @@ public class DollarService {
     @Autowired
     private DollarFeignClient dolarFeignClient;
 
+    @Autowired
+    private DollarRepository dollarRepository;
 
-    public BigDecimal getDolarRate() {
+
+    public DollarValue getDolarRate() {
         DollarResponse dolarResponse = dolarFeignClient.getDolarRate();
-        return dolarResponse.getUSDBRL().getAsk();
+        return dollarRepository.save(dolarResponse.getUSDBRL());
     }
 }
