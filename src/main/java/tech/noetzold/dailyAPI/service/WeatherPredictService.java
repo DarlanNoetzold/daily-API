@@ -8,6 +8,8 @@ import tech.noetzold.dailyAPI.model.WeatherPredict;
 import tech.noetzold.dailyAPI.model.dto.WeatherResponse;
 import tech.noetzold.dailyAPI.repository.WeatherPredictRepository;
 
+import java.math.BigDecimal;
+
 @Service
 @Cacheable("weather")
 public class WeatherPredictService {
