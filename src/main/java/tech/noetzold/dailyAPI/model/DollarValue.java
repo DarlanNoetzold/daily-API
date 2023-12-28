@@ -10,13 +10,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class DollarValue {
+public class DollarValue implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
