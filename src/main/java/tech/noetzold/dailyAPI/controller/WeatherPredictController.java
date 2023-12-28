@@ -17,7 +17,7 @@ public class WeatherPredictController {
     WeatherPredictService weatherPredictService;
 
     @GetMapping("/now")
-    public ResponseEntity<WeatherPredict> getNews() {
+    public ResponseEntity<WeatherPredict> getWeather() {
         WeatherPredict weatherPredict = weatherPredictService.getWeather();
         return ResponseEntity.ok(weatherPredict);
     }
