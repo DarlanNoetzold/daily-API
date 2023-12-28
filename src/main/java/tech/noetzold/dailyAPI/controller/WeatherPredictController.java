@@ -9,8 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 import tech.noetzold.dailyAPI.model.WeatherPredict;
 import tech.noetzold.dailyAPI.service.WeatherPredictService;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/weather")
 public class WeatherPredictController {
