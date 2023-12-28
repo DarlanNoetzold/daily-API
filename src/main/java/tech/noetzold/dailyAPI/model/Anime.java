@@ -2,11 +2,16 @@ package tech.noetzold.dailyAPI.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import tech.noetzold.dailyAPI.model.dto.AnimeImagesResponse;
 
 import java.io.Serializable;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "anime")
 public class Anime implements Serializable {
@@ -46,4 +51,8 @@ public class Anime implements Serializable {
     @JsonProperty("season")
     @Column(name = "season")
     private String season;
+
+    @JsonProperty("images")
+    @OneToOne(cascade = CascadeType.ALL)
+    private AnimeImagesResponse images;
 }
