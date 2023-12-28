@@ -4,10 +4,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
 @Entity
 @Table(name = "anime")
-public class Anime {
+public class Anime implements Serializable {
     @Id
     @JsonProperty("mal_id")
     @Column(name = "mal_id")
