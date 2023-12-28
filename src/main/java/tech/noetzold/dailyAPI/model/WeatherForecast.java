@@ -9,11 +9,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class WeatherForecast {
+public class WeatherForecast implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
