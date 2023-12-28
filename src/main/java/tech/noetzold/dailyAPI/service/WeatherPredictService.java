@@ -25,7 +25,8 @@ public class WeatherPredictService {
         String apiKey = "1472b7ec49efc4bf9eabbdb1026f3cea";
         WeatherResponse weatherResponse = weatherFeignClient.getWeather(lat, lon, apiKey);
         WeatherResponse weatherResponseKelvin = convertKelvin(weatherResponse);
-        return weatherPredictRepository.save(weatherResponseKelvin.getMain());
+        weatherPredictRepository.save(weatherResponseKelvin.getMain());
+        return weatherResponseKelvin.getMain();
     }
 
     private WeatherResponse convertKelvin(WeatherResponse weatherResponse){
