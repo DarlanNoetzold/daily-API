@@ -14,14 +14,15 @@ import tech.noetzold.dailyAPI.repository.DollarRepository;
 public class DollarService {
 
     @Autowired
-    private DollarFeignClient dolarFeignClient;
+    private DollarFeignClient dollarFeignClient;
 
     @Autowired
     private DollarRepository dollarRepository;
 
 
     public DollarValue getDolarRate() {
-        DollarResponse dolarResponse = dolarFeignClient.getDolarRate();
-        return dollarRepository.save(dolarResponse.getUSDBRL());
+        DollarResponse dolarResponse = dollarFeignClient.getDolarRate();
+        dollarRepository.save(dolarResponse.getUSDBRL());
+        return dolarResponse.getUSDBRL();
     }
 }
