@@ -20,7 +20,7 @@ public class TabnewsResponse implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String id;
+    private Long id_local;
     private String owner_id;
     private String parent_id;
     private String slug;
