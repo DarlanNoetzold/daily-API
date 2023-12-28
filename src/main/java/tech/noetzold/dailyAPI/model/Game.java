@@ -23,9 +23,6 @@ public class Game implements Serializable {
     @Column(name = "name")
     private String name;
 
-    @ElementCollection
-    private List<String> platforms;
-
     @JsonProperty("released")
     @Column(name = "released")
     private String released;
