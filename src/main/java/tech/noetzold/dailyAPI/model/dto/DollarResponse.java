@@ -7,11 +7,13 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import tech.noetzold.dailyAPI.model.DollarValue;
 
+import java.io.Serializable;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class DollarResponse {
+public class DollarResponse implements Serializable {
 
     private Long id;
     @JsonProperty("USDBRL")
