@@ -22,6 +22,7 @@ public class GameService {
 
     public List<Game> getGames(String dates, String platforms) {
         GameResponse response = gameClient.getGames("b54c5b97b0154fbbb34a0a822dce5510", dates, platforms);
-        return gameRepository.saveAll(response.getResults());
+        gameRepository.saveAll(response.getResults());
+        return response.getResults();
     }
 }
