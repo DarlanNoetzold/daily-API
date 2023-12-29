@@ -1,12 +1,22 @@
 package tech.noetzold.dailyAPI.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import jakarta.mail.*;
+import tech.noetzold.dailyAPI.model.Email;
+import tech.noetzold.dailyAPI.repository.EmailRepository;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Properties;
 
 @Service
+@Cacheable("email")
 public class EmailReaderService {
 
     @Value("${spring.mail.receive.host}")
@@ -18,7 +28,10 @@ public class EmailReaderService {
     @Value("${spring.mail.password}")
     private String password;
 
-    public void readInbox() throws MessagingException {
+    @Autowired
+    private EmailRepository emailRepository;
+
+    public List<Email> readInbox(Integer count) throws MessagingException, IOException {
         Properties properties = new Properties();
         properties.put("mail.store.protocol", "imaps");
         properties.put("mail.imaps.host", host);
@@ -35,11 +48,23 @@ public class EmailReaderService {
         int startMessage = Math.max(1, messageCount - 19);
         Message[] messages = inbox.getMessages(startMessage, messageCount);
 
+        List<Email> emails = new ArrayList<>();
+
         for (Message message : messages) {
-            System.out.println("Email Subject: " + message.getSubject());
+            Email email = new Email();
+
+            email.setSubject(message.getSubject());
+            email.setContent(message.getContent().toString());
+            email.setSentDate(message.getSentDate());
+            email.setSender(Arrays.toString(message.getFrom()));
+
+            emailRepository.save(email);
+            emails.add(email);
         }
 
         inbox.close(false);
         store.close();
+
+        return emails;
     }
 }
