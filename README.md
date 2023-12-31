@@ -23,7 +23,7 @@
 ## Como utilizar:
 * Segue a doc no Postman:
 
-[<img width="500" alt="image" src="https://github.com/DarlanNoetzold/helpout/assets/41628589/fe6fa1ba-71da-476e-8f5d-5c460f0d8173">](https://documenter.getpostman.com/view/16000387/2s9YsDkaEf)
+https://documenter.getpostman.com/view/16000387/2s9YsDkaEf
 
 
 ---
