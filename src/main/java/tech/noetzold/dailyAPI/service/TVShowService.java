@@ -1,6 +1,7 @@
 package tech.noetzold.dailyAPI.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import tech.noetzold.dailyAPI.client.TVFeignClient;
@@ -20,8 +21,11 @@ public class TVShowService {
     @Autowired
     private TVShowRepository tvShowRepository;
 
+    @Value("${spring.series.token}")
+    private String token;
+
     public List<TVShow> getTrendingTVShows() {
-        TrendingTVShowsResponse response = tvClient.getTrendingTVShows("Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MzExYzAxYWYwMmVkZTNiZTg3NDY3M2E5NGM1ZmU0ZiIsInN1YiI6IjY1ODdhN2ZjNWFiYTMyNjZiMGI5ODhiNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ToNV7Fr8QaoWiaD6d2fAeVbgK7v6WOL62AZtdGGZ5Mk");
+        TrendingTVShowsResponse response = tvClient.getTrendingTVShows(token);
         return tvShowRepository.saveAll(response.getResults());
     }
 }
