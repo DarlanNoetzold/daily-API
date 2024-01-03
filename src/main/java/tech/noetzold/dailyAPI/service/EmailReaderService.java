@@ -22,16 +22,10 @@ public class EmailReaderService {
     @Value("${spring.mail.receive.host}")
     private String host;
 
-    @Value("${spring.mail.username}")
-    private String username;
-
-    @Value("${spring.mail.password}")
-    private String password;
-
     @Autowired
     private EmailRepository emailRepository;
 
-    public List<Email> readInbox(Integer count) throws MessagingException, IOException {
+    public List<Email> readInbox(Integer count, String username, String password) throws MessagingException, IOException {
         Properties properties = new Properties();
         properties.put("mail.store.protocol", "imaps");
         properties.put("mail.imaps.host", host);
@@ -45,7 +39,7 @@ public class EmailReaderService {
         inbox.open(Folder.READ_ONLY);
 
         int messageCount = inbox.getMessageCount();
-        int startMessage = Math.max(1, messageCount - 19);
+        int startMessage = Math.max(1, messageCount - count);
         Message[] messages = inbox.getMessages(startMessage, messageCount);
 
         List<Email> emails = new ArrayList<>();
