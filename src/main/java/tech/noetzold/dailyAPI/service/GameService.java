@@ -1,6 +1,7 @@
 package tech.noetzold.dailyAPI.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import tech.noetzold.dailyAPI.client.GameFeignClient;
@@ -20,8 +21,11 @@ public class GameService {
     @Autowired
     private GameRepository gameRepository;
 
+    @Value("${spring.game.token}")
+    private String token;
+
     public List<Game> getGames(String dates, String platforms) {
-        GameResponse response = gameClient.getGames("b54c5b97b0154fbbb34a0a822dce5510", dates, platforms);
+        GameResponse response = gameClient.getGames(token, dates, platforms);
         gameRepository.saveAll(response.getResults());
         return response.getResults();
     }
