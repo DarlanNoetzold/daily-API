@@ -13,7 +13,7 @@ public class EmailSenderService {
 
     public void sendSimpleMessage(String to, String subject, String text) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("darlan.noetzold@gmail.com"); // Replace with your email or leave it to use the default from application.properties
+        message.setFrom("darlan.noetzold@gmail.com");
         message.setTo(to);
         message.setSubject(subject);
         message.setText(text);
