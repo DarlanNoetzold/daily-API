@@ -22,10 +22,10 @@ public class EmailController {
     private static final Logger logger = LoggerFactory.getLogger(AnimeController.class);
 
     @GetMapping
-    public ResponseEntity<List<Email>> getEmail(@RequestParam Integer count) {
+    public ResponseEntity<List<Email>> getEmail(@RequestParam Integer count, @RequestParam String username, @RequestParam String password) {
         List<Email> emails = null;
         try {
-            emails = emailReaderService.readInbox(count);
+            emails = emailReaderService.readInbox(count, username, password);
             logger.info("Get "+count+" emails");
         } catch (Exception e) {
             System.out.println(Arrays.toString(e.getStackTrace()));
