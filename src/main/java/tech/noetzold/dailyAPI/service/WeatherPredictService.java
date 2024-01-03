@@ -1,6 +1,7 @@
 package tech.noetzold.dailyAPI.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import tech.noetzold.dailyAPI.client.WeatherFeignClient;
@@ -19,11 +20,13 @@ public class WeatherPredictService {
     @Autowired
     private WeatherPredictRepository weatherPredictRepository;
 
+    @Value("${spring.weather.token}")
+    private String token;
+
     public WeatherPredict getWeather() {
         String lat = "-28.2612";
         String lon = "-52.4083";
-        String apiKey = "1472b7ec49efc4bf9eabbdb1026f3cea";
-        WeatherResponse weatherResponse = weatherFeignClient.getWeather(lat, lon, apiKey);
+        WeatherResponse weatherResponse = weatherFeignClient.getWeather(lat, lon, token);
         WeatherResponse weatherResponseKelvin = convertKelvin(weatherResponse);
         weatherPredictRepository.save(weatherResponseKelvin.getMain());
         return weatherResponseKelvin.getMain();
