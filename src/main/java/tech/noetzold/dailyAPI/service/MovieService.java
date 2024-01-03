@@ -1,6 +1,7 @@
 package tech.noetzold.dailyAPI.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import tech.noetzold.dailyAPI.client.MovieFeignClient;
@@ -19,8 +20,11 @@ public class MovieService {
     @Autowired
     private MovieRepository movieRepository;
 
+    @Value("${spring.movie.token}")
+    private String token;
+
     public List<Movie> getTrendingMovies() {
-        TrendingMoviesResponse response = movieClient.getTrendingMovies("Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MzExYzAxYWYwMmVkZTNiZTg3NDY3M2E5NGM1ZmU0ZiIsInN1YiI6IjY1ODdhN2ZjNWFiYTMyNjZiMGI5ODhiNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.ToNV7Fr8QaoWiaD6d2fAeVbgK7v6WOL62AZtdGGZ5Mk");
+        TrendingMoviesResponse response = movieClient.getTrendingMovies(token);
         movieRepository.saveAll(response.getResults());
         return response.getResults();
     }
