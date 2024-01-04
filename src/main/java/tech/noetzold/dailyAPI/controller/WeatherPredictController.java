@@ -23,8 +23,8 @@ public class WeatherPredictController {
 
     @GetMapping("/now")
     public ResponseEntity<WeatherResponse> getWeather() {
-        WeatherResponse weatherPredict = weatherPredictService.getWeather();
+        WeatherResponse waether = weatherPredictService.getWeather();
         logger.info("Get Weather infos");
-        return ResponseEntity.ok(weatherPredict);
+        return ResponseEntity.ok(waether);
     }
 }
