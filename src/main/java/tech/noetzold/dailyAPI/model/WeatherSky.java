@@ -18,7 +18,7 @@ public class WeatherSky implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id_local;
+    private Long id;
     private String main;
     private String description;
 }
