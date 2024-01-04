@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import tech.noetzold.dailyAPI.model.WeatherPredict;
+import tech.noetzold.dailyAPI.model.WeatherSky;
+import tech.noetzold.dailyAPI.model.WeatherWind;
 
 import java.io.Serializable;
 
@@ -15,4 +17,6 @@ import java.io.Serializable;
 public class WeatherResponse implements Serializable {
 
     WeatherPredict main;
+    WeatherSky weather;
+    WeatherWind wind;
 }
