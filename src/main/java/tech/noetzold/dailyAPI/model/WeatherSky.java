@@ -1,12 +1,10 @@
 package tech.noetzold.dailyAPI.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import tech.noetzold.dailyAPI.model.dto.WeatherResponse;
 
 import java.io.Serializable;
 
@@ -21,4 +19,7 @@ public class WeatherSky implements Serializable {
     private Long id;
     private String main;
     private String description;
+    @ManyToOne
+    @JoinColumn(name = "weather_response_id")
+    private WeatherResponse weatherResponse;
 }
