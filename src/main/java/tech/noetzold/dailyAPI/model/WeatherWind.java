@@ -19,7 +19,7 @@ public class WeatherWind implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id_local;
+    private Long id;
     private Double speed;
     private Integer deg;
     private Double gust;
