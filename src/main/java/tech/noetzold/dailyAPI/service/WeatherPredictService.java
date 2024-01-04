@@ -28,7 +28,7 @@ public class WeatherPredictService {
         String lon = "-52.4083";
         WeatherResponse weatherResponse = weatherFeignClient.getWeather(lat, lon, token);
         WeatherResponse weatherResponseKelvin = convertKelvin(weatherResponse);
-        weatherPredictRepository.save(weatherResponseKelvin.getMain());
+        weatherPredictRepository.save(weatherResponseKelvin);
         return weatherResponseKelvin;
     }
 
