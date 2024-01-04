@@ -9,6 +9,7 @@ import tech.noetzold.dailyAPI.model.WeatherSky;
 import tech.noetzold.dailyAPI.model.WeatherWind;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -17,6 +18,6 @@ import java.io.Serializable;
 public class WeatherResponse implements Serializable {
 
     WeatherPredict main;
-    WeatherSky weather;
+    List<WeatherSky> weather;
     WeatherWind wind;
 }
