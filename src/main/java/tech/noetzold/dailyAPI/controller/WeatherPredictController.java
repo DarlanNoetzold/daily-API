@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import tech.noetzold.dailyAPI.model.WeatherPredict;
+import tech.noetzold.dailyAPI.model.dto.WeatherResponse;
 import tech.noetzold.dailyAPI.service.WeatherPredictService;
 
 @CrossOrigin(origins = "*")
@@ -22,8 +22,8 @@ public class WeatherPredictController {
     private static final Logger logger = LoggerFactory.getLogger(AnimeController.class);
 
     @GetMapping("/now")
-    public ResponseEntity<WeatherPredict> getWeather() {
-        WeatherPredict weatherPredict = weatherPredictService.getWeather();
+    public ResponseEntity<WeatherResponse> getWeather() {
+        WeatherResponse weatherPredict = weatherPredictService.getWeather();
         logger.info("Get Weather infos");
         return ResponseEntity.ok(weatherPredict);
     }
