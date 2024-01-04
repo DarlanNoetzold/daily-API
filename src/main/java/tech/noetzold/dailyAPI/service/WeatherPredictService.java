@@ -23,13 +23,13 @@ public class WeatherPredictService {
     @Value("${spring.weather.token}")
     private String token;
 
-    public WeatherPredict getWeather() {
+    public WeatherResponse getWeather() {
         String lat = "-28.2612";
         String lon = "-52.4083";
         WeatherResponse weatherResponse = weatherFeignClient.getWeather(lat, lon, token);
         WeatherResponse weatherResponseKelvin = convertKelvin(weatherResponse);
         weatherPredictRepository.save(weatherResponseKelvin.getMain());
-        return weatherResponseKelvin.getMain();
+        return weatherResponseKelvin;
     }
 
     private WeatherResponse convertKelvin(WeatherResponse weatherResponse){
