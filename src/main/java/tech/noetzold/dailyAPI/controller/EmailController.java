@@ -19,7 +19,7 @@ public class EmailController {
     @Autowired
     private EmailReaderService emailReaderService;
 
-    private static final Logger logger = LoggerFactory.getLogger(AnimeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(EmailController.class);
 
     @GetMapping
     public ResponseEntity<List<Email>> getEmail(@RequestParam Integer count, @RequestParam String username, @RequestParam String password) {
