@@ -19,7 +19,7 @@ public class WeatherPredictController {
     @Autowired
     WeatherPredictService weatherPredictService;
 
-    private static final Logger logger = LoggerFactory.getLogger(AnimeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(WeatherPredictController.class);
 
     @GetMapping("/now")
     public ResponseEntity<WeatherResponse> getWeather() {
