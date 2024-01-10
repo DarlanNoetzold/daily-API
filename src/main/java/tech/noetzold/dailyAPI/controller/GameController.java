@@ -18,7 +18,7 @@ public class GameController {
     @Autowired
     private GameService gameService;
 
-    private static final Logger logger = LoggerFactory.getLogger(AnimeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(GameController.class);
 
     @GetMapping("/trending")
     public ResponseEntity<List<Game>> getGames(@RequestParam String dates, @RequestParam String platforms) {
