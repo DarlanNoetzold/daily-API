@@ -17,7 +17,7 @@ public class CacheController {
     @Autowired
     private CacheManager cacheManager;
 
-    private static final Logger logger = LoggerFactory.getLogger(AnimeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(CacheController.class);
 
     @GetMapping
     public void clearAllCaches() {
