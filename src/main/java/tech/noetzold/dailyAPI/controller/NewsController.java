@@ -21,7 +21,7 @@ public class NewsController {
     @Autowired
     NewsService newsService;
 
-    private static final Logger logger = LoggerFactory.getLogger(AnimeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(NewsController.class);
 
     @GetMapping("/trending")
     public ResponseEntity<List<TabnewsResponse>> getNews() {
