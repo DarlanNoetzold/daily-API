@@ -24,6 +24,7 @@ public class RedisConfig {
             configurationMap.put("weather", RedisCacheConfiguration.defaultCacheConfig().entryTtl(Duration.ofDays(1)));
             configurationMap.put("news", RedisCacheConfiguration.defaultCacheConfig().entryTtl(Duration.ofDays(1)));
             configurationMap.put("email", RedisCacheConfiguration.defaultCacheConfig().entryTtl(Duration.ofDays(1)));
+            configurationMap.put("tracking", RedisCacheConfiguration.defaultCacheConfig().entryTtl(Duration.ofDays(1)));
 
             builder.withInitialCacheConfigurations(configurationMap);
         };
