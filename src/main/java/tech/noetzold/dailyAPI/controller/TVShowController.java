@@ -21,7 +21,7 @@ public class TVShowController {
     @Autowired
     private TVShowService tvShowService;
 
-    private static final Logger logger = LoggerFactory.getLogger(AnimeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(TVShowController.class);
 
     @GetMapping("/trending")
     public ResponseEntity<List<TVShow>> getTrendingTVShows() {
