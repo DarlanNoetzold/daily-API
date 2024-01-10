@@ -20,7 +20,7 @@ public class MovieController {
     @Autowired
     private MovieService movieService;
 
-    private static final Logger logger = LoggerFactory.getLogger(AnimeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(MovieController.class);
 
     @GetMapping("/trending")
     public ResponseEntity<List<Movie>> getTrendingMovies() {
