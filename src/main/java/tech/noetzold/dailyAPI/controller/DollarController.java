@@ -20,7 +20,7 @@ public class DollarController {
     @Autowired
     DollarService dollarService;
 
-    private static final Logger logger = LoggerFactory.getLogger(AnimeController.class);
+    private static final Logger logger = LoggerFactory.getLogger(DollarController.class);
 
     @GetMapping("/value")
     public ResponseEntity<DollarValue> getDollar() {
