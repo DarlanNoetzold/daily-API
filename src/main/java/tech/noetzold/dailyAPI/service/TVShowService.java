@@ -9,6 +9,7 @@ import tech.noetzold.dailyAPI.model.TVShow;
 import tech.noetzold.dailyAPI.model.dto.TrendingTVShowsResponse;
 import tech.noetzold.dailyAPI.repository.TVShowRepository;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -26,6 +27,9 @@ public class TVShowService {
 
     public List<TVShow> getTrendingTVShows() {
         TrendingTVShowsResponse response = tvClient.getTrendingTVShows(token);
-        return tvShowRepository.saveAll(response.getResults());
+        response.getResults().forEach(e -> e.setRequestDate(new Date()));
+        tvShowRepository.saveAll(response.getResults());
+
+        return response.getResults();
     }
 }
