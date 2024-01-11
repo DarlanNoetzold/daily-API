@@ -68,4 +68,7 @@ public class TVShow implements Serializable {
     private List<String> originCountry;
 
     private String name;
+
+    @Column(name = "request_date")
+    private Date requestDate;
 }
