@@ -9,6 +9,7 @@ import tech.noetzold.dailyAPI.model.Movie;
 import tech.noetzold.dailyAPI.model.dto.TrendingMoviesResponse;
 import tech.noetzold.dailyAPI.repository.MovieRepository;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -25,7 +26,9 @@ public class MovieService {
 
     public List<Movie> getTrendingMovies() {
         TrendingMoviesResponse response = movieClient.getTrendingMovies(token);
+        response.getResults().forEach(e -> e.setRequestDate(new Date()));
         movieRepository.saveAll(response.getResults());
+
         return response.getResults();
     }
 }
