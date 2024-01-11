@@ -66,4 +66,7 @@ public class Movie implements Serializable {
     private Integer voteCount;
 
     private String title;
+
+    @Column(name = "request_date")
+    private Date requestDate;
 }
