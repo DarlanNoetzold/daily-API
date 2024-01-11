@@ -23,4 +23,6 @@ public class Email implements Serializable {
     @Column(columnDefinition="TEXT")
     private String content;
     private Date sentDate;
+    @Column(name = "request_date")
+    private Date requestDate;
 }
