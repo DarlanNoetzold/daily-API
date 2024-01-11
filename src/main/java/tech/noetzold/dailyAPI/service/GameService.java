@@ -9,6 +9,7 @@ import tech.noetzold.dailyAPI.model.Game;
 import tech.noetzold.dailyAPI.model.dto.GameResponse;
 import tech.noetzold.dailyAPI.repository.GameRepository;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -26,7 +27,9 @@ public class GameService {
 
     public List<Game> getGames(String dates, String platforms) {
         GameResponse response = gameClient.getGames(token, dates, platforms);
+        response.getResults().forEach(e -> e.setRequestDate(new Date()));
         gameRepository.saveAll(response.getResults());
+
         return response.getResults();
     }
 }
