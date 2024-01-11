@@ -7,6 +7,7 @@ import tech.noetzold.dailyAPI.client.NewsFeignClient;
 import tech.noetzold.dailyAPI.model.dto.TabnewsResponse;
 import tech.noetzold.dailyAPI.repository.NewsRepository;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -21,7 +22,10 @@ public class NewsService {
 
     public List<TabnewsResponse> getNews(){
         List<TabnewsResponse> tabnewsResponse = newsFeignClient.getNews("1", "20", "relevant");
-        return newsRepository.saveAll(tabnewsResponse);
+        tabnewsResponse.forEach(e -> e.setRequestDate(new Date()));
+        newsRepository.saveAll(tabnewsResponse);
+
+        return tabnewsResponse;
     }
 
 }
