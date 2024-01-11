@@ -1,15 +1,13 @@
 package tech.noetzold.dailyAPI.model;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -22,4 +20,6 @@ public class Task implements Serializable {
     private Long id;
     private String description;
     private boolean completed;
+    @Column(name = "add_date")
+    private Date addDate;
 }
