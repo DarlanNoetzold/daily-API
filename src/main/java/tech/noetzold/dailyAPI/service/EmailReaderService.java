@@ -10,10 +10,7 @@ import tech.noetzold.dailyAPI.model.Email;
 import tech.noetzold.dailyAPI.repository.EmailRepository;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 
 @Service
 @Cacheable("email")
@@ -52,6 +49,7 @@ public class EmailReaderService {
             email.setSentDate(message.getSentDate());
             email.setSender(Arrays.toString(message.getFrom()));
 
+            email.setRequestDate(new Date());
             emailRepository.save(email);
             emails.add(email);
         }
