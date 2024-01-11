@@ -1,49 +1,368 @@
-2024-01-08 07:54:51,245 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 16652 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
-2024-01-08 07:54:51,252 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-01-08 07:54:52,416 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-08 07:54:52,417 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-08 07:54:52,611 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 182 ms. Found 9 JPA repository interfaces.
-2024-01-08 07:54:52,635 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-08 07:54:52,638 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-01-08 07:54:52,657 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-08 07:54:52,658 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-08 07:54:52,658 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-08 07:54:52,658 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-08 07:54:52,658 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-08 07:54:52,658 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-08 07:54:52,659 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-08 07:54:52,659 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-08 07:54:52,659 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-08 07:54:52,659 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2024-01-08 07:54:52,957 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=8214cdc2-ff1e-3915-8f44-faa3fcaf69b9
-2024-01-08 07:54:53,692 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2024-01-08 07:54:53,720 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
-2024-01-08 07:54:53,720 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2422 ms
-2024-01-08 07:54:54,284 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2024-01-08 07:54:54,475 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2e013ba1
-2024-01-08 07:54:54,477 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2024-01-08 07:54:54,578 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
-2024-01-08 07:54:54,578 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
-2024-01-08 07:54:54,578 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
-2024-01-08 07:54:54,593 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
-2024-01-08 07:54:54,637 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.017s)
-2024-01-08 07:54:54,638 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
-2024-01-08 07:54:54,650 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
-2024-01-08 07:54:54,655 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
-2024-01-08 07:54:54,755 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-08 07:54:54,827 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
-2024-01-08 07:54:54,877 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
-2024-01-08 07:54:55,142 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-08 07:54:56,267 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-08 07:54:56,394 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-08 07:54:56,529 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-08 07:54:56,875 DEBUG org.hibernate.stat.internal.StatisticsInitiator [main] Statistics initialized [enabled=false]
-2024-01-08 07:55:00,317 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
-2024-01-08 07:55:00,351 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
-2024-01-08 07:55:00,421 INFO io.undertow [main] starting server: Undertow - 2.3.10.Final
-2024-01-08 07:55:00,427 INFO org.xnio [main] XNIO version 3.8.8.Final
-2024-01-08 07:55:00,436 INFO org.xnio.nio [main] XNIO NIO Implementation Version 3.8.8.Final
-2024-01-08 07:55:00,512 INFO org.jboss.threads [main] JBoss Threads version 3.5.0.Final
-2024-01-08 07:55:00,568 INFO org.springframework.boot.web.embedded.undertow.UndertowWebServer [main] Undertow started on port 8193 (http)
-2024-01-08 07:55:01,679 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
-2024-01-08 07:55:01,687 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Started DailyApiApplication in 11.879 seconds (process running for 12.41)
+2024-01-11 08:04:13,111 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 26904 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
+2024-01-11 08:04:13,119 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-01-11 08:04:14,389 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-11 08:04:14,391 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11 08:04:14,552 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 153 ms. Found 10 JPA repository interfaces.
+2024-01-11 08:04:14,570 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-11 08:04:14,572 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-11 08:04:14,587 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TrackingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-01-11 08:04:14,855 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=ec7773f2-a31d-3b10-a1bc-d84ffe09a94e
+2024-01-11 08:04:15,566 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-01-11 08:04:15,595 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
+2024-01-11 08:04:15,596 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2417 ms
+2024-01-11 08:04:16,258 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-11 08:04:16,450 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e67d3b7
+2024-01-11 08:04:16,451 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-11 08:04:16,549 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
+2024-01-11 08:04:16,550 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
+2024-01-11 08:04:16,550 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
+2024-01-11 08:04:16,560 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
+2024-01-11 08:04:16,594 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.017s)
+2024-01-11 08:04:16,595 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
+2024-01-11 08:04:16,605 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2024-01-11 08:04:16,608 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2024-01-11 08:04:16,714 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11 08:04:16,795 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-11 08:04:16,844 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-11 08:04:17,141 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-11 08:04:18,309 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-11 08:04:18,344 DEBUG org.hibernate.SQL [main] alter table if exists anime add column request_date timestamp(6)
+2024-01-11 08:04:18,349 DEBUG org.hibernate.SQL [main] alter table if exists dollar_value add column request_date timestamp(6)
+2024-01-11 08:04:18,350 DEBUG org.hibernate.SQL [main] alter table if exists email add column request_date timestamp(6)
+2024-01-11 08:04:18,351 DEBUG org.hibernate.SQL [main] alter table if exists game add column request_date timestamp(6)
+2024-01-11 08:04:18,351 DEBUG org.hibernate.SQL [main] alter table if exists movies add column request_date timestamp(6)
+2024-01-11 08:04:18,354 DEBUG org.hibernate.SQL [main] alter table if exists tabnews_response add column request_date timestamp(6)
+2024-01-11 08:04:18,356 DEBUG org.hibernate.SQL [main] alter table if exists task add column add_date timestamp(6)
+2024-01-11 08:04:18,356 DEBUG org.hibernate.SQL [main] alter table if exists tracking_response add column request_date timestamp(6)
+2024-01-11 08:04:18,356 DEBUG org.hibernate.SQL [main] alter table if exists tv_shows add column request_date timestamp(6)
+2024-01-11 08:04:18,359 DEBUG org.hibernate.SQL [main] alter table if exists weather_predict add column request_date timestamp(6)
+2024-01-11 08:04:18,441 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11 08:04:18,567 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-11 08:04:18,875 DEBUG org.hibernate.stat.internal.StatisticsInitiator [main] Statistics initialized [enabled=false]
+2024-01-11 08:04:21,971 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
+2024-01-11 08:04:22,026 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-01-11 08:04:22,103 INFO io.undertow [main] starting server: Undertow - 2.3.10.Final
+2024-01-11 08:04:22,112 INFO org.xnio [main] XNIO version 3.8.8.Final
+2024-01-11 08:04:22,121 INFO org.xnio.nio [main] XNIO NIO Implementation Version 3.8.8.Final
+2024-01-11 08:04:22,210 INFO org.jboss.threads [main] JBoss Threads version 3.5.0.Final
+2024-01-11 08:04:22,248 INFO org.springframework.boot.web.embedded.undertow.UndertowWebServer [main] Undertow started on port 8193 (http)
+2024-01-11 08:04:23,324 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
+2024-01-11 08:04:23,335 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Started DailyApiApplication in 11.687 seconds (process running for 12.318)
+2024-01-11 08:32:59,141 INFO io.undertow [SpringApplicationShutdownHook] stopping server: Undertow - 2.3.10.Final
+2024-01-11 08:32:59,161 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11 08:32:59,163 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-11 08:32:59,167 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-11 08:33:04,100 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 26640 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
+2024-01-11 08:33:04,103 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-01-11 08:33:05,117 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-11 08:33:05,118 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11 08:33:05,264 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 139 ms. Found 10 JPA repository interfaces.
+2024-01-11 08:33:05,277 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-11 08:33:05,278 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:05,289 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TrackingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:05,289 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:05,289 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:05,289 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-01-11 08:33:05,515 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=ec7773f2-a31d-3b10-a1bc-d84ffe09a94e
+2024-01-11 08:33:06,172 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-01-11 08:33:06,192 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
+2024-01-11 08:33:06,193 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2044 ms
+2024-01-11 08:33:06,712 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-11 08:33:06,894 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@645c9f0f
+2024-01-11 08:33:06,896 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-11 08:33:06,971 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
+2024-01-11 08:33:06,971 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
+2024-01-11 08:33:06,971 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
+2024-01-11 08:33:06,983 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
+2024-01-11 08:33:07,012 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.014s)
+2024-01-11 08:33:07,012 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
+2024-01-11 08:33:07,053 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2024-01-11 08:33:07,056 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2024-01-11 08:33:07,145 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11 08:33:07,201 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-11 08:33:07,237 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-11 08:33:07,452 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-11 08:33:08,490 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-11 08:33:08,626 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11 08:33:08,744 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-11 08:33:09,100 DEBUG org.hibernate.stat.internal.StatisticsInitiator [main] Statistics initialized [enabled=false]
+2024-01-11 08:33:11,981 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
+2024-01-11 08:33:12,017 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-01-11 08:33:12,096 INFO io.undertow [main] starting server: Undertow - 2.3.10.Final
+2024-01-11 08:33:12,105 INFO org.xnio [main] XNIO version 3.8.8.Final
+2024-01-11 08:33:12,114 INFO org.xnio.nio [main] XNIO NIO Implementation Version 3.8.8.Final
+2024-01-11 08:33:12,185 INFO org.jboss.threads [main] JBoss Threads version 3.5.0.Final
+2024-01-11 08:33:12,238 INFO org.springframework.boot.web.embedded.undertow.UndertowWebServer [main] Undertow started on port 8193 (http)
+2024-01-11 08:33:13,339 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
+2024-01-11 08:33:13,352 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Started DailyApiApplication in 10.664 seconds (process running for 11.172)
+2024-01-11 08:33:25,821 INFO io.undertow [SpringApplicationShutdownHook] stopping server: Undertow - 2.3.10.Final
+2024-01-11 08:33:25,838 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11 08:33:25,840 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-11 08:33:25,846 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-11 08:33:29,436 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 18676 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
+2024-01-11 08:33:29,438 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-01-11 08:33:30,501 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-11 08:33:30,503 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-11 08:33:30,701 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 191 ms. Found 10 JPA repository interfaces.
+2024-01-11 08:33:30,717 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-11 08:33:30,718 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-11 08:33:30,734 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:30,734 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:30,734 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:30,735 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:30,735 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:30,735 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:30,736 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:30,736 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TrackingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:30,736 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:30,737 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-11 08:33:30,737 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2024-01-11 08:33:31,071 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=ec7773f2-a31d-3b10-a1bc-d84ffe09a94e
+2024-01-11 08:33:31,794 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-01-11 08:33:31,814 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
+2024-01-11 08:33:31,814 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2329 ms
+2024-01-11 08:33:32,503 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-11 08:33:32,707 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3fe24670
+2024-01-11 08:33:32,710 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-11 08:33:32,801 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
+2024-01-11 08:33:32,801 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
+2024-01-11 08:33:32,801 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
+2024-01-11 08:33:32,817 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
+2024-01-11 08:33:32,861 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.022s)
+2024-01-11 08:33:32,862 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
+2024-01-11 08:33:32,903 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2024-01-11 08:33:32,907 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2024-01-11 08:33:33,019 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-11 08:33:33,074 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-11 08:33:33,113 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-11 08:33:33,390 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-11 08:33:34,649 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-11 08:33:34,787 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11 08:33:34,947 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-11 08:33:35,304 DEBUG org.hibernate.stat.internal.StatisticsInitiator [main] Statistics initialized [enabled=false]
+2024-01-11 08:33:38,458 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
+2024-01-11 08:33:38,512 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-01-11 08:33:38,589 INFO io.undertow [main] starting server: Undertow - 2.3.10.Final
+2024-01-11 08:33:38,598 INFO org.xnio [main] XNIO version 3.8.8.Final
+2024-01-11 08:33:38,605 INFO org.xnio.nio [main] XNIO NIO Implementation Version 3.8.8.Final
+2024-01-11 08:33:38,684 INFO org.jboss.threads [main] JBoss Threads version 3.5.0.Final
+2024-01-11 08:33:38,731 INFO org.springframework.boot.web.embedded.undertow.UndertowWebServer [main] Undertow started on port 8193 (http)
+2024-01-11 08:33:39,813 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
+2024-01-11 08:33:39,824 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Started DailyApiApplication in 11.843 seconds (process running for 12.811)
+2024-01-11 08:33:45,401 INFO io.undertow.servlet [XNIO-1 task-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-11 08:33:45,401 INFO org.springframework.web.servlet.DispatcherServlet [XNIO-1 task-2] Initializing Servlet 'dispatcherServlet'
+2024-01-11 08:33:45,403 INFO org.springframework.web.servlet.DispatcherServlet [XNIO-1 task-2] Completed initialization in 2 ms
+2024-01-11 08:33:45,813 ERROR io.undertow.request [XNIO-1 task-2] UT005023: Exception handling request to /animes/season/2024/winter
+jakarta.servlet.ServletException: Request processing failed: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:527)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:393)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1512)
+	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1805)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1736)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1538)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.lambda$getConnection$0(LettuceConnectionFactory.java:1518)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.doInLock(LettuceConnectionFactory.java:1478)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1515)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1199)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:1006)
+	at org.springframework.data.redis.cache.DefaultRedisCacheWriter.execute(DefaultRedisCacheWriter.java:346)
+	at org.springframework.data.redis.cache.DefaultRedisCacheWriter.get(DefaultRedisCacheWriter.java:140)
+	at org.springframework.data.redis.cache.DefaultRedisCacheWriter.get(DefaultRedisCacheWriter.java:129)
+	at org.springframework.data.redis.cache.RedisCache.lookup(RedisCache.java:208)
+	at org.springframework.cache.support.AbstractValueAdaptingCache.get(AbstractValueAdaptingCache.java:58)
+	at org.springframework.cache.interceptor.AbstractCacheInvoker.doGet(AbstractCacheInvoker.java:73)
+	at org.springframework.cache.interceptor.CacheAspectSupport.findInCaches(CacheAspectSupport.java:494)
+	at org.springframework.cache.interceptor.CacheAspectSupport.findCachedValue(CacheAspectSupport.java:457)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:407)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:371)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:74)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
+	at tech.noetzold.dailyAPI.service.AnimeService$$SpringCGLIB$$0.getSeasonAnimes(<generated>)
+	at tech.noetzold.dailyAPI.controller.AnimeController.getSeasonAnimes(AnimeController.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	... 52 common frames omitted
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:350)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:215)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:112)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:112)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1734)
+	... 87 common frames omitted
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2024-01-11 08:34:41,113 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,160 DEBUG org.hibernate.SQL [XNIO-1 task-2] select nextval('anime_images_response_seq')
+2024-01-11 08:34:41,198 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,201 DEBUG org.hibernate.SQL [XNIO-1 task-2] select nextval('anime_images_response_seq')
+2024-01-11 08:34:41,203 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,206 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,210 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,214 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,217 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,221 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,224 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,228 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,231 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,234 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,237 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,240 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,243 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,246 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,250 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,253 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,257 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,260 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,265 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,267 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,270 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,273 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,277 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
+2024-01-11 08:34:41,332 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,340 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,346 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,347 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,347 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,348 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,349 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,351 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,352 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,353 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,355 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,356 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,357 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,358 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,359 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,361 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,362 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,363 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,364 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,365 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,366 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,368 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,369 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,371 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,372 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,373 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,374 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,375 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,377 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,379 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,380 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,381 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,382 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,383 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,384 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,385 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,386 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,387 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,387 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,388 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,390 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,391 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,392 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,393 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,395 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,396 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,397 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,398 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,399 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
+2024-01-11 08:34:41,400 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
+2024-01-11 08:34:41,426 INFO tech.noetzold.dailyAPI.controller.AnimeController [XNIO-1 task-2] Returning animes
