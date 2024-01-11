@@ -8,6 +8,8 @@ import tech.noetzold.dailyAPI.client.PackageFeignClient;
 import tech.noetzold.dailyAPI.model.TrackingResponse;
 import tech.noetzold.dailyAPI.repository.TrackingRepository;
 
+import java.util.Date;
+
 
 @Service
 @Cacheable("tracking")
@@ -27,7 +29,9 @@ public class TrackingService {
 
     public TrackingResponse getTracking(String cod){
         TrackingResponse trackingResponse = packageFeignClient.getPackage(user, token, cod);
+        trackingResponse.setRequestDate(new Date());
         trackingRepository.save(trackingResponse);
+
         return trackingResponse;
     }
 }
