@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import tech.noetzold.dailyAPI.model.dto.AnimeImagesResponse;
 
 import java.io.Serializable;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -55,4 +56,7 @@ public class Anime implements Serializable {
     @JsonProperty("images")
     @OneToOne(cascade = CascadeType.ALL)
     private AnimeImagesResponse images;
+
+    @Column(name = "request_date")
+    private Date requestDate;
 }
