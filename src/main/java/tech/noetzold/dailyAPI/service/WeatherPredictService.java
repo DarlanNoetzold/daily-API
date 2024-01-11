@@ -10,6 +10,7 @@ import tech.noetzold.dailyAPI.model.dto.WeatherResponse;
 import tech.noetzold.dailyAPI.repository.WeatherPredictRepository;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 @Service
 @Cacheable("weather")
@@ -28,7 +29,9 @@ public class WeatherPredictService {
         String lon = "-52.4083";
         WeatherResponse weatherResponse = weatherFeignClient.getWeather(lat, lon, token);
         WeatherResponse weatherResponseKelvin = convertKelvin(weatherResponse);
+        weatherResponseKelvin.getMain().setRequestDate(new Date());
         weatherPredictRepository.save(weatherResponseKelvin);
+
         return weatherResponseKelvin;
     }
 
