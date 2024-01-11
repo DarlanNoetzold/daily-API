@@ -8,6 +8,8 @@ import tech.noetzold.dailyAPI.model.Anime;
 import tech.noetzold.dailyAPI.model.dto.AnimeSeasonResponse;
 import tech.noetzold.dailyAPI.repository.AnimeRepository;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -22,6 +24,9 @@ public class AnimeService {
 
     public List<Anime> getSeasonAnimes(int year, String season) {
         AnimeSeasonResponse response = animeClient.getSeasonAnimes(year, season);
-        return animeRepository.saveAll(response.getData());
+        response.getData().forEach(e -> e.setRequestDate(new Date()));
+        animeRepository.saveAll(response.getData());
+
+        return response.getData();
     }
 }
