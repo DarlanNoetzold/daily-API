@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -46,4 +47,7 @@ public class Game implements Serializable {
     @JsonProperty("ratings_count")
     @Column(name = "ratings_count")
     private Integer ratingsCount;
+
+    @Column(name = "request_date")
+    private Date requestDate;
 }
