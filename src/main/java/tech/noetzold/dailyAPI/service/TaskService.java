@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import tech.noetzold.dailyAPI.model.Task;
 import tech.noetzold.dailyAPI.repository.TaskRepository;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -31,6 +32,7 @@ public class TaskService {
 
     @Transactional
     public Task saveTask(Task task){
+        task.setAddDate(new Date());
         return taskRepository.save(task);
     }
 
