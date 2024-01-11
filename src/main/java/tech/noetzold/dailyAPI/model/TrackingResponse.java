@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -38,5 +39,8 @@ public class TrackingResponse implements Serializable {
 
     @Column(name = "ultimo")
     private String ultimo;
+
+    @Column(name = "request_date")
+    private Date requestDate;
 
 }
