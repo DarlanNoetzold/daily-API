@@ -9,6 +9,8 @@ import tech.noetzold.dailyAPI.model.DollarValue;
 import tech.noetzold.dailyAPI.model.dto.DollarResponse;
 import tech.noetzold.dailyAPI.repository.DollarRepository;
 
+import java.util.Date;
+
 @Service
 @Cacheable("dollar")
 public class DollarService {
@@ -19,10 +21,11 @@ public class DollarService {
     @Autowired
     private DollarRepository dollarRepository;
 
-
     public DollarValue getDolarRate() {
         DollarResponse dolarResponse = dollarFeignClient.getDolarRate();
+        dolarResponse.getUSDBRL().setRequestDate(new Date());
         dollarRepository.save(dolarResponse.getUSDBRL());
+
         return dolarResponse.getUSDBRL();
     }
 }
