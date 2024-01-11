@@ -1,15 +1,13 @@
 package tech.noetzold.dailyAPI.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -28,10 +26,7 @@ public class WeatherPredict implements Serializable {
     private int humidity;
     private int sea_level;
     private int grnd_level;
+    @Column(name = "request_date")
+    private Date requestDate;
 
-
-    @Override
-    public String toString() {
-        return "Temperatura de " + temp + " sensação térmica de " + feels_like + " humidade. Temperatura mínima de " + temp_min + " e máxima de " + temp_max;
-    }
 }
