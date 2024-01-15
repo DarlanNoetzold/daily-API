@@ -366,3 +366,8 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 2024-01-11 08:34:41,399 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
 2024-01-11 08:34:41,400 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
 2024-01-11 08:34:41,426 INFO tech.noetzold.dailyAPI.controller.AnimeController [XNIO-1 task-2] Returning animes
+2024-01-11 21:05:41,470 INFO io.undertow [SpringApplicationShutdownHook] stopping server: Undertow - 2.3.10.Final
+2024-01-11 21:05:41,487 INFO io.undertow.servlet [SpringApplicationShutdownHook] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-01-11 21:05:41,658 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-11 21:05:41,668 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-11 21:05:41,671 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
