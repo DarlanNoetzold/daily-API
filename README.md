@@ -12,6 +12,7 @@
 * Foi usado a API do Them Movie DB para obter uma listagem das séries em alta: https://api.themoviedb.org/3/trending/tv;
 * Foi usado a API do Them Movie DB para obter uma listagem dos filmes em alta: https://api.themoviedb.org/3/trending/movie/day;
 * Foi usado a API do Jikan para obter uma listagem dos Animes em lançados: https://api.jikan.moe/v4/seasons/2023/winter;
+* Foi usado a API do linketrack para obter o tracking de pacotes: https://api.linketrack.com
 * Foi usado Spring Actuator para onter informações de Hardware da Máquina;
 * Foi utilizado a API de email do Google para obter os emails no INBOX.
 
