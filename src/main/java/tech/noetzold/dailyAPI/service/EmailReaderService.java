@@ -1,5 +1,6 @@
 package tech.noetzold.dailyAPI.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
@@ -22,6 +23,7 @@ public class EmailReaderService {
     @Autowired
     private EmailRepository emailRepository;
 
+    @Transactional
     public List<Email> readInbox(Integer count, String username, String password) throws MessagingException, IOException {
         Properties properties = new Properties();
         properties.put("mail.store.protocol", "imaps");

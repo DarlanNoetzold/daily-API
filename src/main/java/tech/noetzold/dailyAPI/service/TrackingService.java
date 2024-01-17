@@ -1,5 +1,6 @@
 package tech.noetzold.dailyAPI.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
@@ -27,6 +28,7 @@ public class TrackingService {
     @Value("${spring.tracking.user}")
     private String user;
 
+    @Transactional
     public TrackingResponse getTracking(String cod){
         TrackingResponse trackingResponse = packageFeignClient.getPackage(user, token, cod);
         trackingResponse.setRequestDate(new Date());

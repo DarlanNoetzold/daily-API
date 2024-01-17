@@ -1,5 +1,6 @@
 package tech.noetzold.dailyAPI.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,7 @@ public class AnimeService {
     @Autowired
     private AnimeRepository animeRepository;
 
+    @Transactional
     public List<Anime> getSeasonAnimes(int year, String season) {
         AnimeSeasonResponse response = animeClient.getSeasonAnimes(year, season);
         response.getData().forEach(e -> e.setRequestDate(new Date()));

@@ -1,5 +1,6 @@
 package tech.noetzold.dailyAPI.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
@@ -20,6 +21,7 @@ public class NewsService {
     @Autowired
     private NewsRepository newsRepository;
 
+    @Transactional
     public List<TabnewsResponse> getNews(){
         List<TabnewsResponse> tabnewsResponse = newsFeignClient.getNews("1", "20", "relevant");
         tabnewsResponse.forEach(e -> e.setRequestDate(new Date()));

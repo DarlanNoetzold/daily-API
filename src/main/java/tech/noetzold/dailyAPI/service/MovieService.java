@@ -1,5 +1,6 @@
 package tech.noetzold.dailyAPI.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
@@ -24,6 +25,7 @@ public class MovieService {
     @Value("${spring.movie.token}")
     private String token;
 
+    @Transactional
     public List<Movie> getTrendingMovies() {
         TrendingMoviesResponse response = movieClient.getTrendingMovies(token);
         response.getResults().forEach(e -> e.setRequestDate(new Date()));

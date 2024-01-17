@@ -1,5 +1,6 @@
 package tech.noetzold.dailyAPI.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.Cacheable;
@@ -25,6 +26,7 @@ public class GameService {
     @Value("${spring.game.token}")
     private String token;
 
+    @Transactional
     public List<Game> getGames(String dates, String platforms) {
         GameResponse response = gameClient.getGames(token, dates, platforms);
         response.getResults().forEach(e -> e.setRequestDate(new Date()));
