@@ -1,8 +1,6 @@
 package tech.noetzold.dailyAPI.model;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,6 +14,10 @@ import java.util.Map;
 @AllArgsConstructor
 @Entity
 public class HomeEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
     private String entity_id;
     private String state;
     private Map<String, Object> attributes;
