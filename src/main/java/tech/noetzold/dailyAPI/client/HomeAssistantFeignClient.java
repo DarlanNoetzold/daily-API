@@ -3,6 +3,7 @@ package tech.noetzold.dailyAPI.client;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestParam;
 import tech.noetzold.dailyAPI.model.HomeEntity;
 
 import java.util.List;
@@ -15,4 +16,7 @@ public interface HomeAssistantFeignClient {
 
     @GetMapping("/states")
     List<HomeEntity> getStates(@RequestHeader("Authorization") String bearerToken);
+
+    @GetMapping("/api/states/{entityId}")
+    HomeEntity getState(@RequestHeader("Authorization") String bearerToken, @RequestParam String entityId);
 }
