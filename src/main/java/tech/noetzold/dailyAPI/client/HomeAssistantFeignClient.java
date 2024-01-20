@@ -1,9 +1,9 @@
 package tech.noetzold.dailyAPI.client;
 
-import io.lettuce.core.protocol.Command;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 import tech.noetzold.dailyAPI.model.HomeEntity;
+import tech.noetzold.dailyAPI.model.dto.Command;
 
 import java.util.List;
 
