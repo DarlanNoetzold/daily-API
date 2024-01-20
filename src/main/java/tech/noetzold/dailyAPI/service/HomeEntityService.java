@@ -1,12 +1,12 @@
 package tech.noetzold.dailyAPI.service;
 
-import io.lettuce.core.protocol.Command;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import tech.noetzold.dailyAPI.client.HomeAssistantFeignClient;
 import tech.noetzold.dailyAPI.model.HomeEntity;
+import tech.noetzold.dailyAPI.model.dto.Command;
 import tech.noetzold.dailyAPI.repository.HomeEntityRepository;
 
 import java.util.List;
@@ -39,7 +39,7 @@ public class HomeEntityService {
         return homeAssistantFeignClient.getState(token, entityId);
     }
 
-    public void turnOnLuz(Command command){
+    public void turnOnLuz(tech.noetzold.dailyAPI.model.dto.Command command){
         homeAssistantFeignClient.turnOnLuz(command);
     }
 
