@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tech.noetzold.dailyAPI.model.HomeEntity;
 import tech.noetzold.dailyAPI.service.HomeEntityService;
-import io.lettuce.core.protocol.Command;
+import tech.noetzold.dailyAPI.model.dto.Command;
 
 import java.util.List;
 
