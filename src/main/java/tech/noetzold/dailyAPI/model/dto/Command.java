@@ -9,7 +9,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-class Command {
+public class Command {
     private String entity_id;
     private String state;
 
