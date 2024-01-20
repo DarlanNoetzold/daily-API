@@ -1,5 +1,6 @@
 package tech.noetzold.dailyAPI.service;
 
+import io.lettuce.core.protocol.Command;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -33,4 +34,26 @@ public class HomeEntityService {
 
         return entities;
     }
+
+    public HomeEntity getState(String entityId){
+        return homeAssistantFeignClient.getState(token, entityId);
+    }
+
+    public void turnOnLuz(Command command){
+        homeAssistantFeignClient.turnOnLuz(command);
+    }
+
+    public void turnOffLuz(Command command){
+        homeAssistantFeignClient.turnOffLuz(command);
+    }
+
+    public void turnOnSoquete(Command command){
+        homeAssistantFeignClient.turnOnSoquete(command);
+    }
+
+    public void turnOffSoquete(Command command){
+        homeAssistantFeignClient.turnOffSoquete(command);
+    }
+
+
 }
