@@ -1,373 +1,545 @@
-2024-01-11 08:04:13,111 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 26904 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
-2024-01-11 08:04:13,119 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-01-11 08:04:14,389 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-11 08:04:14,391 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11 08:04:14,552 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 153 ms. Found 10 JPA repository interfaces.
-2024-01-11 08:04:14,570 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-11 08:04:14,572 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-01-11 08:04:14,587 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TrackingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:04:14,588 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-01-11 08:04:14,855 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=ec7773f2-a31d-3b10-a1bc-d84ffe09a94e
-2024-01-11 08:04:15,566 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2024-01-11 08:04:15,595 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
-2024-01-11 08:04:15,596 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2417 ms
-2024-01-11 08:04:16,258 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2024-01-11 08:04:16,450 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e67d3b7
-2024-01-11 08:04:16,451 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2024-01-11 08:04:16,549 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
-2024-01-11 08:04:16,550 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
-2024-01-11 08:04:16,550 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
-2024-01-11 08:04:16,560 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
-2024-01-11 08:04:16,594 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.017s)
-2024-01-11 08:04:16,595 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
-2024-01-11 08:04:16,605 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
-2024-01-11 08:04:16,608 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
-2024-01-11 08:04:16,714 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11 08:04:16,795 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
-2024-01-11 08:04:16,844 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
-2024-01-11 08:04:17,141 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11 08:04:18,309 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11 08:04:18,344 DEBUG org.hibernate.SQL [main] alter table if exists anime add column request_date timestamp(6)
-2024-01-11 08:04:18,349 DEBUG org.hibernate.SQL [main] alter table if exists dollar_value add column request_date timestamp(6)
-2024-01-11 08:04:18,350 DEBUG org.hibernate.SQL [main] alter table if exists email add column request_date timestamp(6)
-2024-01-11 08:04:18,351 DEBUG org.hibernate.SQL [main] alter table if exists game add column request_date timestamp(6)
-2024-01-11 08:04:18,351 DEBUG org.hibernate.SQL [main] alter table if exists movies add column request_date timestamp(6)
-2024-01-11 08:04:18,354 DEBUG org.hibernate.SQL [main] alter table if exists tabnews_response add column request_date timestamp(6)
-2024-01-11 08:04:18,356 DEBUG org.hibernate.SQL [main] alter table if exists task add column add_date timestamp(6)
-2024-01-11 08:04:18,356 DEBUG org.hibernate.SQL [main] alter table if exists tracking_response add column request_date timestamp(6)
-2024-01-11 08:04:18,356 DEBUG org.hibernate.SQL [main] alter table if exists tv_shows add column request_date timestamp(6)
-2024-01-11 08:04:18,359 DEBUG org.hibernate.SQL [main] alter table if exists weather_predict add column request_date timestamp(6)
-2024-01-11 08:04:18,441 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11 08:04:18,567 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11 08:04:18,875 DEBUG org.hibernate.stat.internal.StatisticsInitiator [main] Statistics initialized [enabled=false]
-2024-01-11 08:04:21,971 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
-2024-01-11 08:04:22,026 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
-2024-01-11 08:04:22,103 INFO io.undertow [main] starting server: Undertow - 2.3.10.Final
-2024-01-11 08:04:22,112 INFO org.xnio [main] XNIO version 3.8.8.Final
-2024-01-11 08:04:22,121 INFO org.xnio.nio [main] XNIO NIO Implementation Version 3.8.8.Final
-2024-01-11 08:04:22,210 INFO org.jboss.threads [main] JBoss Threads version 3.5.0.Final
-2024-01-11 08:04:22,248 INFO org.springframework.boot.web.embedded.undertow.UndertowWebServer [main] Undertow started on port 8193 (http)
-2024-01-11 08:04:23,324 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
-2024-01-11 08:04:23,335 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Started DailyApiApplication in 11.687 seconds (process running for 12.318)
-2024-01-11 08:32:59,141 INFO io.undertow [SpringApplicationShutdownHook] stopping server: Undertow - 2.3.10.Final
-2024-01-11 08:32:59,161 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11 08:32:59,163 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2024-01-11 08:32:59,167 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2024-01-11 08:33:04,100 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 26640 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
-2024-01-11 08:33:04,103 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-01-11 08:33:05,117 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-11 08:33:05,118 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11 08:33:05,264 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 139 ms. Found 10 JPA repository interfaces.
-2024-01-11 08:33:05,277 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-11 08:33:05,278 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:05,288 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:05,289 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TrackingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:05,289 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:05,289 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:05,289 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-01-11 08:33:05,515 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=ec7773f2-a31d-3b10-a1bc-d84ffe09a94e
-2024-01-11 08:33:06,172 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2024-01-11 08:33:06,192 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
-2024-01-11 08:33:06,193 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2044 ms
-2024-01-11 08:33:06,712 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2024-01-11 08:33:06,894 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@645c9f0f
-2024-01-11 08:33:06,896 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2024-01-11 08:33:06,971 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
-2024-01-11 08:33:06,971 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
-2024-01-11 08:33:06,971 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
-2024-01-11 08:33:06,983 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
-2024-01-11 08:33:07,012 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.014s)
-2024-01-11 08:33:07,012 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
-2024-01-11 08:33:07,053 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
-2024-01-11 08:33:07,056 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
-2024-01-11 08:33:07,145 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11 08:33:07,201 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
-2024-01-11 08:33:07,237 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
-2024-01-11 08:33:07,452 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11 08:33:08,490 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11 08:33:08,626 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11 08:33:08,744 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11 08:33:09,100 DEBUG org.hibernate.stat.internal.StatisticsInitiator [main] Statistics initialized [enabled=false]
-2024-01-11 08:33:11,981 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
-2024-01-11 08:33:12,017 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
-2024-01-11 08:33:12,096 INFO io.undertow [main] starting server: Undertow - 2.3.10.Final
-2024-01-11 08:33:12,105 INFO org.xnio [main] XNIO version 3.8.8.Final
-2024-01-11 08:33:12,114 INFO org.xnio.nio [main] XNIO NIO Implementation Version 3.8.8.Final
-2024-01-11 08:33:12,185 INFO org.jboss.threads [main] JBoss Threads version 3.5.0.Final
-2024-01-11 08:33:12,238 INFO org.springframework.boot.web.embedded.undertow.UndertowWebServer [main] Undertow started on port 8193 (http)
-2024-01-11 08:33:13,339 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
-2024-01-11 08:33:13,352 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Started DailyApiApplication in 10.664 seconds (process running for 11.172)
-2024-01-11 08:33:25,821 INFO io.undertow [SpringApplicationShutdownHook] stopping server: Undertow - 2.3.10.Final
-2024-01-11 08:33:25,838 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11 08:33:25,840 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2024-01-11 08:33:25,846 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
-2024-01-11 08:33:29,436 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 18676 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
-2024-01-11 08:33:29,438 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
-2024-01-11 08:33:30,501 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-11 08:33:30,503 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-11 08:33:30,701 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 191 ms. Found 10 JPA repository interfaces.
-2024-01-11 08:33:30,717 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
-2024-01-11 08:33:30,718 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-01-11 08:33:30,734 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:30,734 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:30,734 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:30,735 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:30,735 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:30,735 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:30,736 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:30,736 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TrackingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:30,736 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:30,737 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2024-01-11 08:33:30,737 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
-2024-01-11 08:33:31,071 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=ec7773f2-a31d-3b10-a1bc-d84ffe09a94e
-2024-01-11 08:33:31,794 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
-2024-01-11 08:33:31,814 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
-2024-01-11 08:33:31,814 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2329 ms
-2024-01-11 08:33:32,503 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
-2024-01-11 08:33:32,707 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3fe24670
-2024-01-11 08:33:32,710 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
-2024-01-11 08:33:32,801 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
-2024-01-11 08:33:32,801 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
-2024-01-11 08:33:32,801 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
-2024-01-11 08:33:32,817 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
-2024-01-11 08:33:32,861 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.022s)
-2024-01-11 08:33:32,862 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
-2024-01-11 08:33:32,903 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
-2024-01-11 08:33:32,907 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
-2024-01-11 08:33:33,019 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-11 08:33:33,074 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
-2024-01-11 08:33:33,113 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
-2024-01-11 08:33:33,390 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-11 08:33:34,649 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-11 08:33:34,787 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11 08:33:34,947 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-11 08:33:35,304 DEBUG org.hibernate.stat.internal.StatisticsInitiator [main] Statistics initialized [enabled=false]
-2024-01-11 08:33:38,458 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
-2024-01-11 08:33:38,512 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
-2024-01-11 08:33:38,589 INFO io.undertow [main] starting server: Undertow - 2.3.10.Final
-2024-01-11 08:33:38,598 INFO org.xnio [main] XNIO version 3.8.8.Final
-2024-01-11 08:33:38,605 INFO org.xnio.nio [main] XNIO NIO Implementation Version 3.8.8.Final
-2024-01-11 08:33:38,684 INFO org.jboss.threads [main] JBoss Threads version 3.5.0.Final
-2024-01-11 08:33:38,731 INFO org.springframework.boot.web.embedded.undertow.UndertowWebServer [main] Undertow started on port 8193 (http)
-2024-01-11 08:33:39,813 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
-2024-01-11 08:33:39,824 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Started DailyApiApplication in 11.843 seconds (process running for 12.811)
-2024-01-11 08:33:45,401 INFO io.undertow.servlet [XNIO-1 task-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-01-11 08:33:45,401 INFO org.springframework.web.servlet.DispatcherServlet [XNIO-1 task-2] Initializing Servlet 'dispatcherServlet'
-2024-01-11 08:33:45,403 INFO org.springframework.web.servlet.DispatcherServlet [XNIO-1 task-2] Completed initialization in 2 ms
-2024-01-11 08:33:45,813 ERROR io.undertow.request [XNIO-1 task-2] UT005023: Exception handling request to /animes/season/2024/winter
-jakarta.servlet.ServletException: Request processing failed: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1022)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:527)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
-	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
-	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:393)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
-	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
-	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
-	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1512)
-	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1805)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1736)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1538)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.lambda$getConnection$0(LettuceConnectionFactory.java:1518)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.doInLock(LettuceConnectionFactory.java:1478)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1515)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:1199)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:1006)
-	at org.springframework.data.redis.cache.DefaultRedisCacheWriter.execute(DefaultRedisCacheWriter.java:346)
-	at org.springframework.data.redis.cache.DefaultRedisCacheWriter.get(DefaultRedisCacheWriter.java:140)
-	at org.springframework.data.redis.cache.DefaultRedisCacheWriter.get(DefaultRedisCacheWriter.java:129)
-	at org.springframework.data.redis.cache.RedisCache.lookup(RedisCache.java:208)
-	at org.springframework.cache.support.AbstractValueAdaptingCache.get(AbstractValueAdaptingCache.java:58)
-	at org.springframework.cache.interceptor.AbstractCacheInvoker.doGet(AbstractCacheInvoker.java:73)
-	at org.springframework.cache.interceptor.CacheAspectSupport.findInCaches(CacheAspectSupport.java:494)
-	at org.springframework.cache.interceptor.CacheAspectSupport.findCachedValue(CacheAspectSupport.java:457)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:407)
-	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:371)
-	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:74)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717)
-	at tech.noetzold.dailyAPI.service.AnimeService$$SpringCGLIB$$0.getSeasonAnimes(<generated>)
-	at tech.noetzold.dailyAPI.controller.AnimeController.getSeasonAnimes(AnimeController.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	... 52 common frames omitted
-Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost/<unresolved>:6379
-	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
-	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
-	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:350)
-	at io.lettuce.core.RedisClient.connect(RedisClient.java:215)
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:112)
-	at java.base/java.util.Optional.orElseGet(Optional.java:364)
-	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:112)
-	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1734)
-	... 87 common frames omitted
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
-Caused by: java.net.ConnectException: Connection refused: no further information
-	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2024-01-11 08:34:41,113 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,160 DEBUG org.hibernate.SQL [XNIO-1 task-2] select nextval('anime_images_response_seq')
-2024-01-11 08:34:41,198 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,201 DEBUG org.hibernate.SQL [XNIO-1 task-2] select nextval('anime_images_response_seq')
-2024-01-11 08:34:41,203 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,206 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,210 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,214 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,217 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,221 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,224 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,228 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,231 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,234 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,237 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,240 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,243 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,246 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,250 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,253 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,257 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,260 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,265 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,267 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,270 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,273 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,277 DEBUG org.hibernate.SQL [XNIO-1 task-2] select a1_0.mal_id,a1_0.episodes,i1_0.id,i1_0.jpg,i1_0.webp,a1_0.rating,a1_0.request_date,a1_0.score,a1_0.season,a1_0.synopsis,a1_0.title,a1_0.url,a1_0.year from anime a1_0 left join anime_images_response i1_0 on i1_0.id=a1_0.images_id where a1_0.mal_id=?
-2024-01-11 08:34:41,332 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,340 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,346 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,347 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,347 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,348 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,349 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,351 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,352 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,353 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,355 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,356 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,357 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,358 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,359 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,361 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,362 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,363 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,364 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,365 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,366 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,368 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,369 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,371 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,372 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,373 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,374 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,375 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,377 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,379 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,380 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,381 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,382 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,383 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,384 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,385 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,386 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,387 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,387 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,388 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,390 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,391 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,392 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,393 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,395 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,396 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,397 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,398 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,399 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime_images_response (jpg,webp,id) values (?,?,?)
-2024-01-11 08:34:41,400 DEBUG org.hibernate.SQL [XNIO-1 task-2] insert into anime (episodes,images_id,rating,request_date,score,season,synopsis,title,url,year,mal_id) values (?,?,?,?,?,?,?,?,?,?,?)
-2024-01-11 08:34:41,426 INFO tech.noetzold.dailyAPI.controller.AnimeController [XNIO-1 task-2] Returning animes
-2024-01-11 21:05:41,470 INFO io.undertow [SpringApplicationShutdownHook] stopping server: Undertow - 2.3.10.Final
-2024-01-11 21:05:41,487 INFO io.undertow.servlet [SpringApplicationShutdownHook] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2024-01-11 21:05:41,658 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-01-11 21:05:41,668 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2024-01-11 21:05:41,671 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-01-22 10:35:05,937 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 22232 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
+2024-01-22 10:35:05,943 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 10:35:07,226 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-22 10:35:07,227 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 10:35:07,389 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 152 ms. Found 11 JPA repository interfaces.
+2024-01-22 10:35:07,406 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-22 10:35:07,408 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-22 10:35:07,429 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:07,430 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:07,430 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:07,430 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:07,430 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.HomeEntityRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:07,430 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:07,430 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:07,430 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:07,430 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TrackingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:07,430 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:07,431 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:07,431 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-01-22 10:35:07,707 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=dee2ad81-6e79-3196-9cd6-43265572c523
+2024-01-22 10:35:08,484 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-01-22 10:35:08,506 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
+2024-01-22 10:35:08,506 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2504 ms
+2024-01-22 10:35:09,193 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-22 10:35:09,416 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e55d844
+2024-01-22 10:35:09,418 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-22 10:35:09,519 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
+2024-01-22 10:35:09,519 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
+2024-01-22 10:35:09,519 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
+2024-01-22 10:35:09,536 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
+2024-01-22 10:35:09,592 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.023s)
+2024-01-22 10:35:09,592 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
+2024-01-22 10:35:09,607 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2024-01-22 10:35:09,612 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2024-01-22 10:35:09,728 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 10:35:09,816 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-22 10:35:09,871 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-22 10:35:10,151 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 10:35:10,424 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Failed to initialize JPA EntityManagerFactory: Entity 'tech.noetzold.dailyAPI.model.Context' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-01-22 10:35:10,424 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'tech.noetzold.dailyAPI.model.Context' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+2024-01-22 10:35:10,424 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-01-22 10:35:10,427 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-01-22 10:35:10,449 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-22 10:35:10,468 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Entity 'tech.noetzold.dailyAPI.model.Context' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at tech.noetzold.dailyAPI.DailyApiApplication.main(DailyApiApplication.java:14)
+Caused by: org.hibernate.AnnotationException: Entity 'tech.noetzold.dailyAPI.model.Context' has no identifier (every '@Entity' class must declare or inherit at least one '@Id' or '@EmbeddedId' property)
+	at org.hibernate.boot.model.internal.InheritanceState.determineDefaultAccessType(InheritanceState.java:279)
+	at org.hibernate.boot.model.internal.InheritanceState.getElementsToProcess(InheritanceState.java:215)
+	at org.hibernate.boot.model.internal.InheritanceState.postProcess(InheritanceState.java:160)
+	at org.hibernate.boot.model.internal.EntityBinder.handleIdentifier(EntityBinder.java:296)
+	at org.hibernate.boot.model.internal.EntityBinder.bindEntityClass(EntityBinder.java:231)
+	at org.hibernate.boot.model.internal.AnnotationBinder.bindClass(AnnotationBinder.java:422)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:255)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:278)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:321)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	... 16 common frames omitted
+2024-01-22 10:35:32,678 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 2644 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
+2024-01-22 10:35:32,680 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 10:35:33,853 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-22 10:35:33,856 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 10:35:34,012 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 147 ms. Found 11 JPA repository interfaces.
+2024-01-22 10:35:34,031 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-22 10:35:34,032 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-22 10:35:34,050 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:34,051 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:34,051 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:34,051 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:34,051 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.HomeEntityRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:34,052 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:34,052 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:34,052 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:34,052 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TrackingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:34,052 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:34,052 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:35:34,052 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-01-22 10:35:34,304 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=dee2ad81-6e79-3196-9cd6-43265572c523
+2024-01-22 10:35:34,976 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-01-22 10:35:34,996 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
+2024-01-22 10:35:34,996 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2265 ms
+2024-01-22 10:35:35,552 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-22 10:35:35,760 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70e1aa20
+2024-01-22 10:35:35,762 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-22 10:35:35,846 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
+2024-01-22 10:35:35,846 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
+2024-01-22 10:35:35,846 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
+2024-01-22 10:35:35,861 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
+2024-01-22 10:35:35,895 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.013s)
+2024-01-22 10:35:35,895 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
+2024-01-22 10:35:35,925 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2024-01-22 10:35:35,929 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2024-01-22 10:35:36,028 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 10:35:36,092 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-22 10:35:36,122 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-22 10:35:36,368 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 10:35:36,708 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Failed to initialize JPA EntityManagerFactory: Could not determine recommended JdbcType for Java type 'java.util.Map<java.lang.String, java.lang.Object>'
+2024-01-22 10:35:36,709 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Could not determine recommended JdbcType for Java type 'java.util.Map<java.lang.String, java.lang.Object>'
+2024-01-22 10:35:36,709 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-01-22 10:35:36,713 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-01-22 10:35:36,742 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-22 10:35:36,758 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Could not determine recommended JdbcType for Java type 'java.util.Map<java.lang.String, java.lang.Object>'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at tech.noetzold.dailyAPI.DailyApiApplication.main(DailyApiApplication.java:14)
+Caused by: org.hibernate.type.descriptor.java.spi.JdbcTypeRecommendationException: Could not determine recommended JdbcType for Java type 'java.util.Map<java.lang.String, java.lang.Object>'
+	at org.hibernate.type.descriptor.java.spi.UnknownBasicJavaType.getRecommendedJdbcType(UnknownBasicJavaType.java:37)
+	at org.hibernate.boot.model.process.internal.InferredBasicValueResolver.from(InferredBasicValueResolver.java:195)
+	at org.hibernate.mapping.BasicValue.resolution(BasicValue.java:459)
+	at org.hibernate.mapping.BasicValue.buildResolution(BasicValue.java:427)
+	at org.hibernate.mapping.BasicValue.resolve(BasicValue.java:314)
+	at org.hibernate.mapping.BasicValue.resolve(BasicValue.java:304)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.lambda$processValueResolvers$4(InFlightMetadataCollectorImpl.java:1800)
+	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1682)
+	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1660)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processValueResolvers(InFlightMetadataCollectorImpl.java:1799)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1785)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:331)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	... 16 common frames omitted
+2024-01-22 10:41:08,527 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 12108 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
+2024-01-22 10:41:08,530 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 10:41:09,999 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-22 10:41:10,000 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 10:41:10,181 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 173 ms. Found 11 JPA repository interfaces.
+2024-01-22 10:41:10,195 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-22 10:41:10,196 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-22 10:41:10,219 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:41:10,219 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:41:10,219 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:41:10,220 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:41:10,220 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.HomeEntityRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:41:10,220 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:41:10,220 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:41:10,220 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:41:10,220 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TrackingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:41:10,220 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:41:10,220 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:41:10,221 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-01-22 10:41:10,494 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=dee2ad81-6e79-3196-9cd6-43265572c523
+2024-01-22 10:41:11,284 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-01-22 10:41:11,308 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
+2024-01-22 10:41:11,309 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2736 ms
+2024-01-22 10:41:12,054 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-22 10:41:12,237 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58068b40
+2024-01-22 10:41:12,239 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-22 10:41:12,334 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
+2024-01-22 10:41:12,334 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
+2024-01-22 10:41:12,334 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
+2024-01-22 10:41:12,350 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
+2024-01-22 10:41:12,381 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.014s)
+2024-01-22 10:41:12,381 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
+2024-01-22 10:41:12,404 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2024-01-22 10:41:12,407 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2024-01-22 10:41:12,508 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 10:41:12,571 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-22 10:41:12,615 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-22 10:41:12,865 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 10:41:13,186 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Failed to initialize JPA EntityManagerFactory: Could not determine recommended JdbcType for Java type 'java.util.Map<java.lang.String, java.lang.Object>'
+2024-01-22 10:41:13,186 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Could not determine recommended JdbcType for Java type 'java.util.Map<java.lang.String, java.lang.Object>'
+2024-01-22 10:41:13,187 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-01-22 10:41:13,189 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-01-22 10:41:13,219 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-22 10:41:13,240 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Could not determine recommended JdbcType for Java type 'java.util.Map<java.lang.String, java.lang.Object>'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at tech.noetzold.dailyAPI.DailyApiApplication.main(DailyApiApplication.java:14)
+Caused by: org.hibernate.type.descriptor.java.spi.JdbcTypeRecommendationException: Could not determine recommended JdbcType for Java type 'java.util.Map<java.lang.String, java.lang.Object>'
+	at org.hibernate.type.descriptor.java.spi.UnknownBasicJavaType.getRecommendedJdbcType(UnknownBasicJavaType.java:37)
+	at org.hibernate.boot.model.process.internal.InferredBasicValueResolver.from(InferredBasicValueResolver.java:195)
+	at org.hibernate.mapping.BasicValue.resolution(BasicValue.java:459)
+	at org.hibernate.mapping.BasicValue.buildResolution(BasicValue.java:427)
+	at org.hibernate.mapping.BasicValue.resolve(BasicValue.java:314)
+	at org.hibernate.mapping.BasicValue.resolve(BasicValue.java:304)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.lambda$processValueResolvers$4(InFlightMetadataCollectorImpl.java:1800)
+	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1682)
+	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1660)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processValueResolvers(InFlightMetadataCollectorImpl.java:1799)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1785)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:331)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1432)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1503)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	... 16 common frames omitted
+2024-01-22 10:55:20,153 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 7308 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
+2024-01-22 10:55:20,157 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 10:55:21,269 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-22 10:55:21,272 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 10:55:21,430 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 149 ms. Found 11 JPA repository interfaces.
+2024-01-22 10:55:21,445 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-22 10:55:21,446 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-22 10:55:21,459 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:55:21,460 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:55:21,460 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:55:21,460 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:55:21,460 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.HomeEntityRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:55:21,460 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:55:21,460 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:55:21,460 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:55:21,460 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TrackingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:55:21,461 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:55:21,461 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:55:21,461 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-01-22 10:55:21,705 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=dee2ad81-6e79-3196-9cd6-43265572c523
+2024-01-22 10:55:22,389 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-01-22 10:55:22,413 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
+2024-01-22 10:55:22,413 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2207 ms
+2024-01-22 10:55:22,973 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-22 10:55:23,156 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16c0be3b
+2024-01-22 10:55:23,158 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-22 10:55:23,251 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
+2024-01-22 10:55:23,251 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
+2024-01-22 10:55:23,251 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
+2024-01-22 10:55:23,262 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
+2024-01-22 10:55:23,289 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.012s)
+2024-01-22 10:55:23,290 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
+2024-01-22 10:55:23,318 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2024-01-22 10:55:23,322 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2024-01-22 10:55:23,429 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 10:55:23,485 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-22 10:55:23,517 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-22 10:55:23,765 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 10:55:24,914 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 10:55:25,064 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 10:55:25,202 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-22 10:55:25,577 DEBUG org.hibernate.stat.internal.StatisticsInitiator [main] Statistics initialized [enabled=false]
+2024-01-22 10:55:25,895 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeEntityController': Unsatisfied dependency expressed through field 'homeEntityService': Error creating bean with name 'homeEntityService': Unsatisfied dependency expressed through field 'homeEntityRepository': Error creating bean with name 'homeEntityRepository' defined in tech.noetzold.dailyAPI.repository.HomeEntityRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class tech.noetzold.dailyAPI.model.HomeEntity
+2024-01-22 10:55:25,896 WARN org.springframework.context.annotation.AnnotationConfigApplicationContext [main] Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:265)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:222)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:445)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1069)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1037)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:113)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1193)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1125)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at tech.noetzold.dailyAPI.DailyApiApplication.main(DailyApiApplication.java:14)
+2024-01-22 10:55:25,900 WARN org.springframework.context.annotation.AnnotationConfigApplicationContext [main] Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:265)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:222)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:445)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1069)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1037)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:113)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1193)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1125)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at tech.noetzold.dailyAPI.DailyApiApplication.main(DailyApiApplication.java:14)
+2024-01-22 10:55:25,900 WARN org.springframework.context.annotation.AnnotationConfigApplicationContext [main] Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:265)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:222)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:445)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1069)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1037)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:113)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1193)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1125)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at tech.noetzold.dailyAPI.DailyApiApplication.main(DailyApiApplication.java:14)
+2024-01-22 10:55:25,901 WARN org.springframework.context.annotation.AnnotationConfigApplicationContext [main] Exception thrown from ApplicationListener handling ContextClosedEvent
+org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'applicationTaskExecutor': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:220)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:265)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:222)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:144)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:445)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:378)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1069)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1037)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:113)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:211)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1193)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1125)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at tech.noetzold.dailyAPI.DailyApiApplication.main(DailyApiApplication.java:14)
+2024-01-22 10:55:25,901 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 10:55:25,904 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2024-01-22 10:55:25,906 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2024-01-22 10:55:25,930 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger [main] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-01-22 10:55:25,943 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeEntityController': Unsatisfied dependency expressed through field 'homeEntityService': Error creating bean with name 'homeEntityService': Unsatisfied dependency expressed through field 'homeEntityRepository': Error creating bean with name 'homeEntityRepository' defined in tech.noetzold.dailyAPI.repository.HomeEntityRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class tech.noetzold.dailyAPI.model.HomeEntity
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:772)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:752)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at tech.noetzold.dailyAPI.DailyApiApplication.main(DailyApiApplication.java:14)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'homeEntityService': Unsatisfied dependency expressed through field 'homeEntityRepository': Error creating bean with name 'homeEntityRepository' defined in tech.noetzold.dailyAPI.repository.HomeEntityRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class tech.noetzold.dailyAPI.model.HomeEntity
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:772)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:752)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1441)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1348)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:769)
+	... 20 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'homeEntityRepository' defined in tech.noetzold.dailyAPI.repository.HomeEntityRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Not a managed type: class tech.noetzold.dailyAPI.model.HomeEntity
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1775)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1441)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1348)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:769)
+	... 34 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class tech.noetzold.dailyAPI.model.HomeEntity
+	at org.hibernate.metamodel.model.domain.internal.JpaMetamodelImpl.managedType(JpaMetamodelImpl.java:193)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:463)
+	at org.hibernate.metamodel.model.domain.internal.MappingMetamodelImpl.managedType(MappingMetamodelImpl.java:97)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:82)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:69)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:246)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:211)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:194)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:81)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:317)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:279)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135)
+	at org.springframework.data.util.Lazy.get(Lazy.java:113)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:285)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	... 44 common frames omitted
+2024-01-22 10:56:35,659 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Starting DailyApiApplication using Java 17.0.7 with PID 12268 (C:\Users\Usuário\Documents\Projetos\GitHub\daily-API\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\daily-API)
+2024-01-22 10:56:35,661 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-01-22 10:56:36,757 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-22 10:56:36,759 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-22 10:56:36,901 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 129 ms. Found 10 JPA repository interfaces.
+2024-01-22 10:56:36,916 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Multiple Spring Data modules found, entering strict repository configuration mode
+2024-01-22 10:56:36,917 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-01-22 10:56:36,931 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.AnimeRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:56:36,932 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.DollarRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:56:36,932 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.EmailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:56:36,932 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.GameRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:56:36,932 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.MovieRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:56:36,932 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.NewsRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:56:36,932 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TaskRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:56:36,932 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TrackingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:56:36,932 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.TVShowRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:56:36,933 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main] Spring Data Redis - Could not safely identify store assignment for repository candidate interface tech.noetzold.dailyAPI.repository.WeatherPredictRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-01-22 10:56:36,933 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-01-22 10:56:37,187 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=ba2003ab-0813-3358-8524-e6dbd5276e51
+2024-01-22 10:56:37,901 WARN io.undertow.websockets.jsr [main] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-01-22 10:56:37,921 INFO io.undertow.servlet [main] Initializing Spring embedded WebApplicationContext
+2024-01-22 10:56:37,922 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2219 ms
+2024-01-22 10:56:38,477 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-01-22 10:56:38,661 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25c6ab3f
+2024-01-22 10:56:38,662 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-01-22 10:56:38,748 INFO org.flywaydb.core.internal.license.VersionPrinter [main] Flyway Community Edition 9.22.3 by Redgate
+2024-01-22 10:56:38,748 INFO org.flywaydb.core.internal.license.VersionPrinter [main] See release notes here: https://rd.gt/416ObMi
+2024-01-22 10:56:38,748 INFO org.flywaydb.core.internal.license.VersionPrinter [main] 
+2024-01-22 10:56:38,759 INFO org.flywaydb.core.FlywayExecutor [main] Database: jdbc:postgresql://localhost:5432/daily (PostgreSQL 14.5)
+2024-01-22 10:56:38,786 INFO org.flywaydb.core.internal.command.DbValidate [main] Successfully validated 0 migrations (execution time 00:00.012s)
+2024-01-22 10:56:38,786 WARN org.flywaydb.core.internal.command.DbValidate [main] No migrations found. Are your locations set up correctly?
+2024-01-22 10:56:38,938 INFO org.flywaydb.core.internal.command.DbMigrate [main] Current version of schema "public": << Empty Schema >>
+2024-01-22 10:56:38,941 INFO org.flywaydb.core.internal.command.DbMigrate [main] Schema "public" is up to date. No migration necessary.
+2024-01-22 10:56:39,046 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-22 10:56:39,102 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-22 10:56:39,141 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-01-22 10:56:39,380 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-22 10:56:40,491 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-22 10:56:40,626 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 10:56:40,762 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-22 10:56:41,141 DEBUG org.hibernate.stat.internal.StatisticsInitiator [main] Statistics initialized [enabled=false]
+2024-01-22 10:56:44,276 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
+2024-01-22 10:56:44,329 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-01-22 10:56:44,426 INFO io.undertow [main] starting server: Undertow - 2.3.10.Final
+2024-01-22 10:56:44,435 INFO org.xnio [main] XNIO version 3.8.8.Final
+2024-01-22 10:56:44,442 INFO org.xnio.nio [main] XNIO NIO Implementation Version 3.8.8.Final
+2024-01-22 10:56:44,524 INFO org.jboss.threads [main] JBoss Threads version 3.5.0.Final
+2024-01-22 10:56:44,577 INFO org.springframework.boot.web.embedded.undertow.UndertowWebServer [main] Undertow started on port 8193 (http)
+2024-01-22 10:56:45,662 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
+2024-01-22 10:56:45,670 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Started DailyApiApplication in 11.438 seconds (process running for 11.984)
