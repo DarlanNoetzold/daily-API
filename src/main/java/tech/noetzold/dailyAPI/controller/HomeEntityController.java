@@ -39,21 +39,25 @@ public class HomeEntityController {
 
     @PostMapping("/light/on")
     public void turnOnLuz(@RequestBody Command command) {
+        logger.info("Turn on the light {}", command.getEntity_id());
         homeEntityService.turnOnLuz(command);
     }
 
     @PostMapping("/light/off")
     public void turnOffLuz(@RequestBody Command command) {
+        logger.info("Turn off the light {}", command.getEntity_id());
         homeEntityService.turnOffLuz(command);
     }
 
     @PostMapping("/switch/on")
     public void turnOnSoquete(@RequestBody Command command) {
+        logger.info("Turn on the soquete {}", command.getEntity_id());
         homeEntityService.turnOnSoquete(command);
     }
 
     @PostMapping("/switch/off")
     public void turnOffSoquete(@RequestBody Command command) {
+        logger.info("Turn off the soquete {}", command.getEntity_id());
         homeEntityService.turnOffSoquete(command);
     }
 }
