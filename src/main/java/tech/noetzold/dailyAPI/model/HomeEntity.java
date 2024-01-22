@@ -12,14 +12,12 @@ import java.util.Map;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 public class HomeEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String entity_id;
     private String state;
+
     private Map<String, Object> attributes;
     private Date last_changed;
     private Date last_updated;
