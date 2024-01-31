@@ -543,3 +543,7 @@ Caused by: java.lang.IllegalArgumentException: Not a managed type: class tech.no
 2024-01-22 10:56:44,577 INFO org.springframework.boot.web.embedded.undertow.UndertowWebServer [main] Undertow started on port 8193 (http)
 2024-01-22 10:56:45,662 INFO org.springframework.cloud.commons.util.InetUtils [main] Cannot determine local hostname
 2024-01-22 10:56:45,670 INFO tech.noetzold.dailyAPI.DailyApiApplication [main] Started DailyApiApplication in 11.438 seconds (process running for 11.984)
+2024-01-22 11:07:27,438 INFO io.undertow [SpringApplicationShutdownHook] stopping server: Undertow - 2.3.10.Final
+2024-01-22 11:07:27,457 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-22 11:07:27,459 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-01-22 11:07:27,465 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
